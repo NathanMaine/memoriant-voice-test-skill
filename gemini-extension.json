@@ -1,0 +1,23 @@
+{
+  "name": "memoriant-voice-test-skill",
+  "description": "Voice NLU robustness testing framework. Inject noise into utterances, run test sets, score robustness across noise types, and review evidence logs.",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "run-voice-tests",
+      "path": "skills/run-voice-tests/SKILL.md"
+    },
+    {
+      "name": "inject-noise",
+      "path": "skills/inject-noise/SKILL.md"
+    },
+    {
+      "name": "score-robustness",
+      "path": "skills/score-robustness/SKILL.md"
+    },
+    {
+      "name": "review-evidence",
+      "path": "skills/review-evidence/SKILL.md"
+    }
+  ]
+}

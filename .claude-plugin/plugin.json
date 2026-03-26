@@ -1,0 +1,15 @@
+{
+  "name": "memoriant-voice-test-skill",
+  "version": "1.0.0",
+  "description": "Voice NLU robustness testing framework. Inject noise and variation into voice utterances, classify intent accuracy, score robustness, and log structured evidence. 4 skills + 2 specialized agents.",
+  "author": {
+    "name": "Nathan Maine",
+    "url": "https://github.com/NathanMaine"
+  },
+  "homepage": "https://github.com/NathanMaine/voice-robustness-testing-agent",
+  "repository": "https://github.com/NathanMaine/memoriant-voice-test-skill",
+  "license": "MIT",
+  "keywords": ["voice", "nlu", "robustness", "testing", "intent-classification", "noise-injection", "speech", "memoriant"],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}
