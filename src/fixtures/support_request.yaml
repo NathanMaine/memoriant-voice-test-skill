@@ -1,0 +1,21 @@
+test_set_id: "support-request"
+description: "User requesting help or support -- varied phrasing and noise."
+expected_label: "support_request"
+
+utterances:
+  - id: "s1"
+    text: "I need help with my account."
+  - id: "s2"
+    text: "Can I speak to a support agent?"
+  - id: "s3"
+    text: "I'm having a problem logging in."
+  - id: "s4"
+    text: "There's an issue with my last payment."
+  - id: "s5"
+    text: "Um, hello, I, uh, need some help please."
+    metadata:
+      condition: "filler_words"
+  - id: "s6"
+    text: "Something is wrong."
+    metadata:
+      condition: "vague"

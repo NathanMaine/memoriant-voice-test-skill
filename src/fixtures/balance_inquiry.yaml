@@ -1,0 +1,21 @@
+test_set_id: "balance-inquiry"
+description: "User asking for their account balance -- various phrasings."
+expected_label: "balance_inquiry"
+
+utterances:
+  - id: "u1"
+    text: "What's my balance?"
+  - id: "u2"
+    text: "Can you tell me how much money I have?"
+  - id: "u3"
+    text: "How much is left in my checking account?"
+  - id: "u4"
+    text: "Uh, yeah, I just wanna know my account balance, please."
+  - id: "u5"
+    text: "Show me the balance on my savings."
+    metadata:
+      condition: "clean"
+  - id: "u6"
+    text: "I need to check my account."
+    metadata:
+      condition: "short"

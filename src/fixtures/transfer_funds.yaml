@@ -1,0 +1,19 @@
+test_set_id: "transfer-funds"
+description: "User requesting a funds transfer."
+expected_label: "transfer_funds"
+
+utterances:
+  - id: "t1"
+    text: "I want to transfer money to my savings account."
+  - id: "t2"
+    text: "Can you send fifty dollars to my other account?"
+  - id: "t3"
+    text: "Move funds from checking to savings."
+  - id: "t4"
+    text: "I'd like to wire some money."
+    metadata:
+      condition: "uncommon_phrasing"
+  - id: "t5"
+    text: "Put twenty bucks in my other account."
+    metadata:
+      condition: "slang"

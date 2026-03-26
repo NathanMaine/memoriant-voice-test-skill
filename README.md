@@ -115,6 +115,60 @@ Component Scores:
 - Generating evidence for voice system quality reviews
 - Building regression test suites for voice NLU systems
 
+## Using the Actual Tool
+
+The full source code from [NathanMaine/voice-robustness-testing-agent](https://github.com/NathanMaine/voice-robustness-testing-agent) is bundled in `src/` so you can run it directly.
+
+### Install
+
+```bash
+# Requires Python 3.10+
+cd src
+pip install -e ".[dev]"
+```
+
+Or install just the runtime dependencies:
+
+```bash
+pip install click pyyaml
+```
+
+### Run
+
+```bash
+# Run a test set from a YAML/JSON file
+voice-lab run fixtures/balance_inquiry.yaml
+
+# List available test fixtures
+voice-lab list
+
+# Show help
+voice-lab --help
+```
+
+### Configuration
+
+No configuration file required. Test sets are YAML or JSON files you point the CLI at. Place your own test fixtures anywhere and pass the path to `voice-lab run`.
+
+To use the LLM-backed classifier (instead of the rule-based default), set your provider API key:
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...   # for Claude
+voice-lab run fixtures/balance_inquiry.yaml --classifier llm
+```
+
+Evidence logs are written to `runs/` as JSONL files, one entry per utterance result.
+
+### Tests
+
+```bash
+pytest
+```
+
+### Full Documentation
+
+See the [voice-robustness-testing-agent repo](https://github.com/NathanMaine/voice-robustness-testing-agent) for the complete spec, architecture notes, and contribution guide.
+
 ## Source Repository
 
 Built from [NathanMaine/voice-robustness-testing-agent](https://github.com/NathanMaine/voice-robustness-testing-agent).
